@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+</head>
+<body>
+    <h1 th:if="${message}" th:text="${message}">Message</h1>
+    <form action="#" method="post" th:action="@{/upload}">
+        <input type="file" th:field="${image.path}" value="URL"/>
+        <input type="submit" value="Prześlij" >
+    </form>
+</body>
+</html>
